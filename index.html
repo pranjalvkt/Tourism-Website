@@ -1,138 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India Tourism | Indian Travel Destinations Guide & Tour Packages</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            outline: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            height: 100%;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            font-family: 'Poppins',sans-serif;
-        }
-        div {
-            display: block;
-        }
-        h1 {
-            font-size: 62px;
-            font-weight:normal;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 35px;
-        }
-        p {
-            font-size: 18px;
-        }
-        ul {
-            list-style-type: none;
-        }
-        li {
-            float: left;
-        }
-        li a {
-            display: block;
-            text-align: center;
-            color:black;
-            padding: 14px 16px;
-            text-decoration: none;
-            margin: auto;
-        }
-        li a:hover {
-            background-color: #38404f;
-        }
-        span {
-            font-weight: 600;
-        }
-        #india_holiday {
-            color: #FF6612;
-        }
-        .center_heading {
-            font-family:Arial, Helvetica, sans-serif;
-            color: #38404f;
-            line-height: 55px;
-            position: absolute;
-            top: 100px;
-            left: 550px;
-            
-        }
-        .bottom_navbar {
-            padding: 25px 20px;
-            width: 100%;
-            float: left;
-            background: #fff;
-            box-shadow: 1px 1px 5px 5px rgba(105,105,105,.1);
-            position: fixed;
-            bottom: 0px;
-            z-index: 999;
-            transition: all .2s;
-            position: 699.800px;
-        }
-        .bottom_navbar:hover {
-            padding: 50px;
-        }
-        .container {
-            position: relative;
-            
-        }
-        .top_navbar {
 
-        }
-        .navigator {
-            width: 90%;
-            margin: 0px auto;
-        }
-    </style>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        India Tourism | Indian Travel Destinations Guide & Tour Packages
+    </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header class="top_navbar">
-        <nav class="navigator">
+
+    <!-- -------------------------------MENU ICON JS------------------------------- -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel_p").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel_p").style.width = "0";
+        }
+    </script>
+    <!-- -------------------------------MENU ICON JS------------------------------- -->
+
+
+
+    <!-- -------------------------------TOP NAVIGATION BAR------------------------------- -->
+    <header class="top_navbar_p">
+
+
+        <!-- -------------------------------WEBSITE ICON------------------------------- -->
+        <a href="#">
+            <img class="website_icon_p" src="https://image.flaticon.com/icons/svg/3125/3125848.svg"
+                alt="website_icon" />
+        </a>
+        <!-- -------------------------------WEBSITE ICON------------------------------- -->
+
+
+
+        <!-- -------------------------------CONTENT INSIDE NAVBAR (LEFT SIDE)------------------------------- -->
+        <nav class="navigator_left_p">
             <ul>
-                <li><a href="#">Destinations</a></li>
-                <li><a href="#">Holiday Ideas</a></li>
-                <li><a href="#">Packages</a></li>
-                <li><a href="#">Places to Stay</a></li>
-                <li><a href="#">Weekend Gateways</a></li>
+                <li class="dropdown">
+                    <a class="navbar_content_p" href="#">
+                        Destinations
+                        <img class="down_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                    </a>
+
+
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+                    <div class="dropdown_container_p">
+                        <a class="dropdown_content_p" href="#">
+                            North India
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+
+                        <a class="dropdown_content_p" href="#">
+                            South India
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            East India
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            West India
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                    </div>
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+
+                </li>
+                <li class="dropdown">
+                    <a class="navbar_content_p" href="#">
+                        Holiday Ideas
+                        <img class="down_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                    </a>
+
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+                    <div class="dropdown_container_p">
+                        <a class="dropdown_content_p" href="#">
+                            Tourism Destinations by Interest
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            Adventure Tourism
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            Pilgrimage Tourism
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                    </div>
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+
+                </li>
+                <li class="dropdown">
+                    <a class="navbar_content_p" href="#">
+                        Packages
+                        <img class="down_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                    </a>
+
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+                    <div class="dropdown_container_p">
+                        <a class="dropdown_content_p" href="#">
+                            Packages by State
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            Holidays by Interest
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            Popular Tour Packages
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            Luxury Train Tour
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                    </div>
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+
+                </li>
+                <li class="dropdown">
+                    <a class="navbar_content_p" href="#">
+                        Places to Stay
+                        <img class="down_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                    </a>
+
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+                    <div class="dropdown_container_p">
+                        <a class="dropdown_content_p" href="#">City Wise
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            Wildlife Resorts
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            Beach Resorts
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                        <a class="dropdown_content_p" href="#">
+                            Luxury Hotels
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                    </div>
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+
+
+                </li>
+                <li class="dropdown">
+                    <a class="navbar_content_p" href="#">
+                        Weekend Gateways
+                        <img class="down_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                    </a>
+
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+                    <div class="dropdown_container_p">
+                        <a class="dropdown_content_p" href="#">
+                            Top Weekend Breaks & Short Getaways Near Your City
+                            <img class="right_arrow_p" src="https://www.tourmyindia.com/imgnew/dropdown-arrow.svg" />
+                        </a>
+                    </div>
+                    <!-- -------------------------------DROPDOWN CONTENT------------------------------- -->
+
+                </li>
             </ul>
         </nav>
+        <!-- -------------------------------CONTENT INSIDE NAVBAR (LEFT SIDE)------------------------------- -->
+
+
+        <!-- -------------------------------MENU ICON------------------------------- -->
+        <!-- IF IT DOES'T LOOKS GREAT WE CAN DELETE THIS AS WELL -->
+        <div id="mySidepanel_p" class="sidepanel_p">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Contact us</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <!-- -------------------------------MENU ICON------------------------------- -->
+
+
     </header>
+
+
+
+
+    <!-- ------------------------------------------BOTTOM NAVIGATION BAR------------------------------------------  -->
     <section class="bottom_navbar">
         <div class="container">
             <ul>
                 <li>
                     <a href="#">India Tour</a>
                     <!-- <img src="https://www.tourmyindia.com/imgnew/india-tour.svg" alt="india tour"> -->
-                    
                 </li>
                 <li>
                     <a href="#">International Tour</a>
                     <!-- <img src="https://www.tourmyindia.com/imgnew/international-tour.svg" alt="international-tour"> -->
-                    
                 </li>
                 <li>
                     <a href="#">Destination Wedding</a>
                     <!-- <img src="https://www.tourmyindia.com/imgnew/destinaton-wedding.svg" alt="destinaton-wedding"> -->
-                    
                 </li>
                 <li>
                     <a href="#">Medical Tourism</a>
                     <!-- <img src="https://www.tourmyindia.com/imgnew/medical-tourism.svg" alt="medical-tourism"> -->
-                    
                 </li>
             </ul>
         </div>
     </section>
+    <!-- ------------------------------------------BOTTOM NAVIGATION BAR------------------------------------------  -->
+
+
     <div class="center_heading">
         <h1>Let us plan you a</h1>
         <h1>perfect <span id="india_holiday">India Holiday</span></h1>
-        <p>Personalised, well-crafted tour packages for best experiences </p>
+        <p>Personalised, well-crafted tour packages for best experiences</p>
     </div>
 </body>
+
 </html>
