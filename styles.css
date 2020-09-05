@@ -209,3 +209,8 @@ span {
     margin-left: 20px;
     z-index: 99;
 }
+
+.openbtn_p:focus {
+    display: block;
+    cursor: default;
+}
