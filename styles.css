@@ -11,10 +11,12 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
+  margin-top: 0;
+  font-family: 'Baloo Bhaina 2', cursive;
 }
 
-/* ********************************COMMENT THIS OUT BEFORE ADDING THE BACKGROUNG(Below)******************************** */
+/* COMMENT THIS OUT BEFORE ADDING THE BACKGROUNG(Below) */
+/* Let us plan you a perfect */
 h1 {
   font-size: 62px;
   font-weight: normal;
@@ -23,24 +25,36 @@ h1 {
   margin-top: 0;
 }
 
+/* Personalised, well-crafted tour packages for best experiences */
 p {
   font-size: 18px;
 }
 
+/* USED FOR, INIDA HOLIDAY */
 span {
   font-weight: 600;
 }
-/* ********************************COMMENT IT OUT BEFORE ADDING THE BACKGROUNG(Above)******************************** */
 
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+/* UL STYLING */
 .ul_style_p {
   list-style-type: none;
   width: 100%;
+  margin: -17px 5px;
 }
 
+/* LI STYLING */
 .li_style_p {
   float: left;
 }
 
+/* STYLING OF ALL ANCHOR TAGS */
 .general_property_p {
   color: black;
   display: block;
@@ -52,63 +66,116 @@ span {
   text-decoration: none;
 }
 
-/* ********************************REMOVE THIS, BEFORE ADDING THE BACKGROUNG(Below)******************************** */
-#india_holiday {
-  color: #ff6612;
-}
-
+/* CENTER HEADING */
 .center_heading {
-  color: #38404f;
-  font-family: Arial, Helvetica, sans-serif;
-  left: 550px;
-  line-height: 55px;
+  /*updated;
+    few lines have been added and deleted as well*/
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 520px;
+}
+
+/* this is the part of center text*/
+#r_1 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 3px white;
+}
+
+#r_2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 2px 1px 6px black;
+  text-transform: uppercase;
+}
+
+#r_3 {
+  font-size: 25px;
+  word-spacing: 1.5px;
+  color: LavenderBlush;
+  margin-bottom: 25px;
+  text-shadow: 1 px 1px 3px black;
+}
+
+.changecontent:after {
+  content: '';
+  animation: changetext 15s infinite linear;
+  color: #00b894;
+}
+
+@keyframes changetext {
+  0% {
+    content: "AGRA";
+  }
+
+  20% {
+    content: "VARANASI";
+  }
+
+  35% {
+    content: "SRINAGAR ";
+  }
+
+  60% {
+    content: "LEH-LADAKH";
+  }
+
+  80% {
+    content: "DARJEELING ";
+  }
+
+  100% {
+    content: "JAIPUR";
+  }
+}
+
+/* /---------------------------------------end of center text------------------/ */
+/*search icon and its css */
+/* /updated/ */
+#r_icon {
+  border: 3px solid Aquamarine;
+  height: 55px;
+  width: 520px;
+  border-radius: 50px;
+  padding-left: 70px;
+  /* color: ; */
+  background-color: MintCream;
+}
+
+/* /search bar is done need to add search icon inside box please add if you can/  */
+.p_bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
   position: absolute;
-  top: 250px;
-}
-/* ********************************REMOVE THIS, BEFORE ADDING THE BACKGROUNG(Above)******************************** */
-
-
-/* ***************************BOTTOM NAVIGATION BAR(REMOVE THIS, BEFORE ADDING YOURS)*************************** */
-.bottom_navbar {
-  background: #fff;
-  bottom: 0px;
-  box-shadow: 1px 1px 5px 5px rgba(105, 105, 105, 0.1);
-  float: left;
-  padding: 25px 20px;
-  position: 699.8px;
-  position: fixed;
-  transition: all 0.2s;
+  top: 1700px;
+  text-align: center;
   width: 100%;
-  z-index: 999;
+  height: 250px;
 }
 
-.bottom_navbar:hover {
-  padding: 30px;
-}
-
-.container_p {
-  position: relative;
-}
-/* ***************************BOTTOM NAVIGATION BAR(REMOVE THIS, BEFORE ADDING YOURS)*************************** */
-
+/* TOP CONTAINER HOLDING ALL UL, LI, LOGO & MENU BUTTON i.e., HEADER*/
 .top_navbar_p {
   background: #fff;
   box-shadow: 1px 1px 1px 1px rgba(105, 105, 105, 0.1);
   float: left;
   justify-content: space-around;
-  padding: 10px;
   width: 100%;
+  padding: 14px 2px;
 }
 
+/*2nd TOP CONTAINER HOLDING ALL UL & LI */
 .navigator_left_p {
+  background: white;
   justify-content: space-around;
   margin: -23px 118px;
-  padding: 30px;
+  padding: 36px;
 }
 
 .navigator_left_p ul li {
   float: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 15px;
 }
 
@@ -117,17 +184,17 @@ span {
   padding-right: 13px;
 }
 
+/* WEBSITE ICON */
 .website_icon_p {
   left: 25px;
   margin-right: 20px;
   position: absolute;
-  /* top: 5px; initial */
   top: 5px;
-  /* width: 7%; initial */
   width: 9%;
   z-index: 99;
 }
 
+/* CONTAINER HOLDING SECOND LEVEL OF DROPDOWN i.e., NORTH IDNIA, SOUTH INDIA */
 .dropdown_container_p {
   background-color: #f9f9f9;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -146,15 +213,18 @@ span {
   text-decoration: none;
 }
 
-.dropdown a:hover {
+/* LI STYLING */
+.dropdown_p a:hover {
   color: #ff6612;
   transition-duration: 0.4s;
+  text-decoration: none;
 }
 
-.dropdown:hover .dropdown_container_p {
+.dropdown_p:hover .dropdown_container_p {
   display: block;
 }
 
+/* ARROW USED INSIDE THE LI */
 .down_arrow_p {
   width: 10px;
 }
@@ -166,19 +236,21 @@ span {
   width: 10px;
 }
 
+/* MENU ICON */
 .sidepanel_p {
   background-color: #111;
   height: 100%;
   overflow-x: hidden;
   padding-top: 60px;
   position: fixed;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   transition: 0.8s;
   width: 0;
   z-index: 1;
 }
 
+/* TEXT INSIDE MENU */
 .sidepanel_p a {
   color: #818181;
   display: block;
@@ -192,6 +264,7 @@ span {
   color: #f1f1f1;
 }
 
+/* CLOSE BUTTON OF MENU */
 .sidepanel_p .closebtn_p {
   font-size: 36px;
   position: absolute;
@@ -199,6 +272,7 @@ span {
   top: 2px;
 }
 
+/* OPEN BUTTON OF MENU */
 .openbtn_p {
   background-color: transparent;
   border: none;
@@ -213,7 +287,672 @@ span {
   z-index: 99;
 }
 
+/* WARNING !! */
+/* IMPORTANT BUG FIX (DON'T TOUCH THIS PIECE OF TEXT) */
 .openbtn_p:focus {
   cursor: default;
-  display: block;
+  display: none;
 }
+
+.r_container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 690px;
+  top: 0;
+  animation: animate 25s ease-in-out infinite;
+  background-size: cover;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    background-image: url("https://images.unsplash.com/photo-1587135941948-670b381f08ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+  }
+
+  25% {
+    background-image: url("https://images.unsplash.com/photo-1572314368000-3aa54c197ec3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80")
+  }
+
+  50% {
+    background-image: url("https://images.unsplash.com/photo-1561619623-f0817a46a520?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1987&q=80")
+  }
+
+  75% {
+    background-image: url("https://cdn.pixabay.com/photo/2020/02/02/17/24/travel-4813658_1280.jpg")
+  }
+}
+
+.center_heading {
+  color: #38404f;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 500px;
+  line-height: 55px;
+  position: absolute;
+  top: 150px;
+}
+
+.center_heading h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+}
+
+.center_heading p {
+  color: rgb(255, 255, 255);
+  font-size: bold;
+  font-size: 1.5rem;
+}
+
+.r_searchbox {
+  display: flex;
+}
+
+#r_ico {
+  border: 3px solid Aquamarine;
+  height: 55px;
+  width: 100px;
+  border-radius: 0 50px 50px 0;
+  /* color:white; */
+  color: #8d93ab;
+  /* background-color:LemonChiffon;*/
+  /* background-color: Orchid;*/
+  /* /background-color: Thistle;/ */
+  /* background-color: transparent; */
+  background-color: #fff;
+}
+
+#r_ico:hover {
+  cursor: pointer;
+}
+
+#r_icon {
+  border: 3px solid Aquamarine;
+  height: 55px;
+  width: 440px;
+  border-radius: 50px 0 0 50px;
+  padding-left: 70px;
+  background-color: MintCream;
+}
+
+/** bottom navbar fir  **/
+.bottom_navbar {
+  background: #fff;
+  bottom: -80px;
+  box-shadow: 1px 1px 5px 5px rgba(105, 105, 105, 0.1);
+  float: left;
+  position: fixed;
+  transition: all 0.2s;
+  width: 100%;
+  z-index: 58;
+  height: 150px;
+  padding: 0px 1px;
+}
+
+.bottom_navbar:hover {
+  float: right;
+  height: 180px;
+  padding: 0px 1px;
+}
+
+.bottom_navbar a:hover {
+  color: #ff6612;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.ul_style_modify {
+  list-style-type: none;
+  width: 100%;
+  padding: 23px 84px;
+  margin-left: 380px;
+}
+
+.li_style_modify {
+  float: left;
+}
+
+#img_size1_p {
+  height: 35px;
+  width: 111px;
+  vertical-align: baseline;
+  padding: 2px;
+  margin-left: 6px;
+}
+
+#img_size2_p {
+  height: 35px;
+  width: 111px;
+  vertical-align: baseline;
+  padding-top: 1px;
+  margin-left: 32px;
+}
+
+#img_size3_p {
+  height: 35px;
+  width: 111px;
+  vertical-align: baseline;
+  padding: 1px;
+  margin-left: 45px;
+}
+
+#img_size4_p {
+  height: 35px;
+  width: 111px;
+  vertical-align: baseline;
+  padding: 1.5px;
+  margin-left: 20px;
+}
+
+.container_p {
+  position: relative;
+  margin: 0px 200px;
+}
+
+.li_style_modify a {
+  font-display: none;
+  margin-top: -15px;
+}
+
+/** explore buttons ***/
+/** secondportion ****/
+.second {
+  /* border: 2px solid red; */
+  /* margin-top: 35%; */
+  height: 60vh;
+  text-align: center;
+}
+
+.second_s {
+  /* border: 2px solid cyan; */
+  height: 500px;
+  margin: 60px 2px;
+}
+
+.container_second {
+  height: 96px;
+}
+
+.container_second h3 {
+  margin: -13px 2%;
+  padding: 16px 220px;
+  font-size: 2rem;
+}
+
+/** top trending holidays **/
+.holiday {
+  height: 300px;
+  display: grid;
+  grid-template-columns: 3fr 4fr 3fr;
+  grid-column-gap: 2rem;
+  height: 250px;
+  margin: 11px 22px;
+  padding: 9px 6px;
+  text-align: center;
+}
+
+/** holidays shadow */
+#holiday1 {
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+#holiday2 {
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+#holiday3 {
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+/* border imgs **/
+#holiday2 img {
+  height: 192px;
+  width: 375px;
+}
+
+#holiday3 img {
+  height: 192px;
+  width: 374px;
+}
+
+#holiday1 img {
+  height: 192px;
+  width: 375px;
+}
+
+/* holidays headings */
+#holiday1 h3 {
+  margin: 6px 81px;
+  padding: 2px 59px;
+}
+
+#holiday2 h3 {
+  margin: 6px 81px;
+}
+
+#holiday3 h3 {
+  margin: 6px 81px;
+}
+
+/*x*x holidays headings *xx*/
+/** buttons inside second portion ***/
+.wrap_left_right {
+  height: 45px;
+  width: 140px;
+  display: flex;
+  margin: -130px 140px;
+}
+
+.wrap_center {
+  height: 45px;
+  width: 140px;
+  display: flex;
+  margin: -130px 204px;
+}
+
+.button_s {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid white;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: -17px 0px;
+  opacity: 0;
+}
+
+.button_s:hover {
+  background-color: transparent;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  transform: translateY(-7px);
+  opacity: 1;
+}
+
+/* /x*xx buttons inside second portion *x*x/ */
+/**third container  **/
+.container_third {
+  height: 96px;
+}
+
+.container_third h3 {
+  margin: -13px 2%;
+  padding: 16px 220px;
+  font-size: 2rem;
+}
+
+.third {
+  height: 60vh;
+  text-align: center;
+}
+
+.third_s {
+  height: 500px;
+  margin: 60px 2px;
+}
+
+/** pranjal ka codes ***/
+.middle_section_p {
+  margin-top: 690.4px;
+  background-color: #fbecec;
+  height: 690px;
+}
+
+.incredibleindia {
+  font-family: 'Yeseva One', cursive;
+  font-size: 105px;
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 420px;
+}
+
+#explore_btn_p {
+  color: #dc3545;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#explore_anchor_p:hover {
+  text-decoration: none;
+}
+
+#i_of_india_p {
+  color: #dc3545;
+}
+
+.s_button {
+  border-radius: 4px;
+  background: transparent;
+  border: 2px solid #dc3545;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 257px;
+  left: 430px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+.s_button {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  width: 170px;
+  margin-top: 205px;
+}
+
+.s_button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 22px;
+  right: -20px;
+  transition: 0.5s;
+  color: #dc3545;
+}
+
+.s_button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.s_button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+/* nextandpreviousbuttons **/
+#next_previous {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+#sbkepapa {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+#next_previous:hover {
+  background-color: #ff9801;
+  color: black;
+}
+
+#sbkepapa:hover {
+  background-color: #ff9801;
+  color: black;
+}
+
+.nextandprevious {
+  margin: -47px 44px;
+  float: right;
+}
+
+.nextandprevious1 {
+  margin: -47px 44px;
+  float: right;
+}
+
+/*** mediaquery ***/
+@media only screen and (max-width: 1085px) {
+  .ul_style_p {
+    list-style-type: none;
+    width: 122%;
+  }
+
+  .center_heading h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+  }
+
+  .center_heading p {
+    color: rgb(255, 255, 255);
+    font-size: bold;
+    font-size: 19px;
+  }
+}
+
+/***********  FOOTER STARTS HERE ***********/
+.footer_p {
+  width: 1519.200px;
+  height: 607.200px;
+  background-color: #41444b;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.footer_nav_p {
+  width: 1170px;
+  height: 407.200px;
+  margin: 0 174.600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* BRAND LOGO */
+.brand_logo_div_p {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.brand_logo_p {
+  width: 80%;
+  padding: 0 30px;
+}
+
+.brand_logo_h5_p {
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0 30px;
+  padding-left: 0px;
+  padding-top: 20px;
+}
+
+.brand_logo_h5_p:hover {
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0 30px;
+  padding-left: 0px;
+  padding-top: 20px;
+  color: #ff6612;
+  transition-duration: 0.5s;
+}
+
+#brand_logo_anchor_p {
+  color: #919496;
+}
+
+#brand_logo_anchor_p:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* TOP LINKS */
+.top_links_p {
+  display: flex;
+  width: 50%;
+  flex: 0 0 auto;
+  flex-direction: row;
+}
+
+.dt_style {
+  color: #919496;
+  margin: 20px 0;
+}
+
+.dl_style_p {
+  width: 165px;
+  height: 346px;
+  padding: 0 15px;
+}
+
+.dd_a_style_p {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.dd_a_style_p:hover {
+  text-decoration: none;
+  color: #ff6612;
+  transition-duration: 0.5s;
+}
+
+/* SOCIAL ICONS */
+.social_icons_p {
+  margin: 0 15px 0 auto;
+  width: 192px;
+  height: 348px;
+}
+
+.footer_ul_p {
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 20px
+}
+
+.footer_li_p {
+  margin-right: 10px;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+}
+
+.footer_li_p a {
+  margin-right: 0;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  color: white;
+  font-size: 2rem;
+}
+
+.footer_li_p a:hover {
+  margin-right: 0;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  color: #ff6612;
+  transition-duration: 0.5s;
+}
+
+/* .footer_span_p{} */
+.social_image_size_p {
+  width: 64px;
+  height: 54px;
+}
+
+/* COUNTRY MAP */
+.country_map_p {
+  margin: 0 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#country_flag_p {
+  margin-left: 10px;
+  width: 24px;
+  height: 18px;
+}
+
+#country_anchor_p {
+  padding: 0;
+  font-size: 12px;
+  display: flex;
+  color: #919496;
+}
+
+#country_anchor_p:hover {
+  text-decoration: none;
+  color: #ff6612;
+  transition-duration: 0.5s;
+}
+
+/* BOTTOM LINKS */
+.bottom_links_p {
+  width: 100%;
+  display: flex;
+}
+
+.bottom_links_ul_p {
+  margin: 0 45px 0 0;
+  padding: 0 0 0 15px;
+}
+
+.bottom_links_li_p {
+  margin-right: 24px;
+  padding: 0;
+  display: inline-block;
+}
+
+.bottom_link_a_p {
+  padding: 1em 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.bottom_link_a_p:hover {
+  text-decoration: none;
+  color: #ff6612;
+  transition-duration: 0.5s;
+}
+
+.bottom_links_span_p {
+  margin: 0 15px 0 auto;
+  padding: 1em 0;
+  font-size: 1rem;
+  color: rgb(10, 10, 10);
+}
+
+/*  FOOTER ENDS HERE */
+/* CORONA VIRUS UPDATE */
+/* .alert_p {
+  background-color: #e5e5e5;
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  top: 100px;
+  left: 1195px;
+  box-shadow: 6px 6px 1px -3px rgba(105, 105, 105, 0.1);
+}
+.inner_alert_p {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+   top: 0;
+   right: 0;
+   background-color: #8d93ab;
+   height: 40px;
+}
+.alert_body_p {
+  top: 82px;
+    left: 25px;
+    position: absolute;
+}
+.alert_header_p {
+  padding: 10px;
+}
+.here_p {
+  text-decoration: none;
+  color: #000;
+}
+.here_p:hover {
+  text-decoration: none;
+  color: #000;
+} */
